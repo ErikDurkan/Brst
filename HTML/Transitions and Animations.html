@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and Animations</title>
+    <style>
+        #em
+        {
+            opacity: 0.5;
+        }
+        #em:hover
+        {
+            opacity: 1;
+            transition-delay: 0.5s;
+            transition-duration: 1.5s;
+            transform: skew(20deg, 20deg);
+        }
+        #em2
+        {
+            width: 40%;
+        }
+        #em2:hover
+        {
+            transform: rotate(50deg);
+            transition-duration: 1.5s;
+        }
+        #em3:hover
+        {
+            transform:scale(0.5, 0.5);
+            transition-duration: 1.5s;
+        }
+        #em4:hover
+        {
+            transform: translate(50px, 50px);
+        }
+        h1:hover
+        {
+            transform: skew(25deg, 25deg)
+        }
+        h1
+        {
+            transform: skew(20deg, 20deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Skew testing</h1>
+    <img src="https://static.stereogum.com/uploads/2013/12/eminem.jpg" id="em">
+    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/14687/production/_110619538_gettyimages-873359588.jpg" id="em2">
+    <img src="https://www.nme.com/wp-content/uploads/2019/10/Webp.net-resizeimage-12-696x442.jpg" id="em3">
+    <img src="https://images.news18.com/ibnlive/uploads/2022/01/shutterstock_1632717139-1-16424155503x2.jpg?impolicy=website&width=510&height=356" id="em4">
+</body>
+</html>

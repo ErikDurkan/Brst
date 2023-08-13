@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        #container, body
+        {
+            font-family: Arial, sans-serif;
+            background-color: #98AFC7;
+            overflow: auto;
+        }
+        #foot
+        {
+            border: 2px solid black;  
+            padding: 0px; 
+            border-radius: 5px;
+            background-color: #778899;                     
+        }
+        p
+        {
+            border: 3px solid #8987be;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: #87a2be;
+        }
+        h2
+        {
+            text-align: center;
+        }
+        .logoImage
+        {
+            border: 2px solid green;
+            border-radius: 7px;
+        }
+        .arimg
+        {
+            border: 2px solid green;
+            border-radius: 7px;
+        }
+        hr
+        {
+            height: 3px;
+            background-color: black;
+            border: none;
+        }
+        @media screen and (min-width: 1024px) 
+        {
+          #article1, #article2, #article3, #article4
+          {
+            float:left;
+            width: 24%;
+            margin: 5px;
+            font-size: 1.4em;
+          }
+          .logoImage
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 250px;
+            
+          }
+          .arimg
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 170px;
+          }
+        }
+        @media screen and (max-width: 600px) 
+        {
+          #article1,#article2,#article3,#article4
+          {
+            float: none;
+            font-size: 0.8em;
+          }
+          .logoImage
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 250px;
+          }
+          .arimg
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 170px;
+          }          
+        }
+        @media screen and (width: 768px) 
+        {
+            #article1, #article3
+          {
+            width: 48%;
+            float: left;
+            font-size: 0.9em;
+          }
+            #article2, #article4
+          {
+            width: 48%;
+            float: right;
+            font-size: 0.9em;            
+          }            
+          .logoImage
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 250px;
+          }
+          .arimg
+          {
+            display:flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 170px;
+          }
+        }
+    </style>
+</head>
+<body>    
+    <div id="container">
+        <header>
+            <img class="logoImage" src=”http://placehold.it/300x200”>
+        </header>
+        <hr>
+        <section class="sec">
+            <article id="article1">
+                <img class="arimg" src=”http://placebear.com/150/100”>
+                <h2>Article #1</h2>                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Accusamus, at! Ratione omnis perferendis excepturi?
+                    Commodi incidunt, numquam quod soluta sed quaerat non
+                    neque reprehenderit, beatae similique error ipsum, libero adipisci.
+                    Accusantium cumque aspernatur recusandae eum in
+                    hic fugiat, sunt maxime ab, sequi doloribus! Delectus quae sequi
+                    adipisci earum, facilis aliquam repudiandae tempore! Maxime
+                    officiis maiores unde voluptatem aperiam obcaecati mollitia!
+                    Ipsum dolores, optio nesciunt, nisi quo corporis neque
+                    numquam, doloribus necessitatibus repellendus molestias?
+                    Nesciunt veritatis recusandae sed distinctio inventore, sunt
+                    rerum eaque eveniet suscipit! Quod eos quasi sapiente
+                    repudiandae architecto.
+                </p>
+            </article>
+            <article id="article2">
+                <img class="arimg" src=”http://placebear.com/150/100”>                
+                <h2>Article #2</h2>                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Accusamus, at! Ratione omnis perferendis excepturi?
+                    Commodi incidunt, numquam quod soluta sed quaerat non
+                    neque reprehenderit, beatae similique error ipsum, libero adipisci.
+                    Accusantium cumque aspernatur recusandae eum in
+                    hic fugiat, sunt maxime ab, sequi doloribus! Delectus quae sequi
+                    adipisci earum, facilis aliquam repudiandae tempore! Maxime
+                    officiis maiores unde voluptatem aperiam obcaecati mollitia!
+                    Ipsum dolores, optio nesciunt, nisi quo corporis neque
+                    numquam, doloribus necessitatibus repellendus molestias?
+                    Nesciunt veritatis recusandae sed distinctio inventore, sunt
+                    rerum eaque eveniet suscipit! Quod eos quasi sapiente
+                    repudiandae architecto.
+                </p>
+            </article>
+            <article id="article3">
+                <img class="arimg" src=”http://placebear.com/150/100”>                
+                <h2>Article #3</h2>                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Accusamus, at! Ratione omnis perferendis excepturi?
+                    Commodi incidunt, numquam quod soluta sed quaerat non
+                    neque reprehenderit, beatae similique error ipsum, libero adipisci.
+                    Accusantium cumque aspernatur recusandae eum in
+                    hic fugiat, sunt maxime ab, sequi doloribus! Delectus quae sequi
+                    adipisci earum, facilis aliquam repudiandae tempore! Maxime
+                    officiis maiores unde voluptatem aperiam obcaecati mollitia!
+                    Ipsum dolores, optio nesciunt, nisi quo corporis neque
+                    numquam, doloribus necessitatibus repellendus molestias?
+                    Nesciunt veritatis recusandae sed distinctio inventore, sunt
+                    rerum eaque eveniet suscipit! Quod eos quasi sapiente
+                    repudiandae architecto.
+                </p>
+            </article>
+            <article id="article4">
+                <img class="arimg" src=”http://placebear.com/150/100”>     
+                <h2>Article #4</h2>                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Accusamus, at! Ratione omnis perferendis excepturi?
+                    Commodi incidunt, numquam quod soluta sed quaerat non
+                    neque reprehenderit, beatae similique error ipsum, libero adipisci.
+                    Accusantium cumque aspernatur recusandae eum in
+                    hic fugiat, sunt maxime ab, sequi doloribus! Delectus quae sequi
+                    adipisci earum, facilis aliquam repudiandae tempore! Maxime
+                    officiis maiores unde voluptatem aperiam obcaecati mollitia!
+                    Ipsum dolores, optio nesciunt, nisi quo corporis neque
+                    numquam, doloribus necessitatibus repellendus molestias?
+                    Nesciunt veritatis recusandae sed distinctio inventore, sunt
+                    rerum eaque eveniet suscipit! Quod eos quasi sapiente
+                    repudiandae architecto.
+                </p>
+            </article>
+        </section>    
+        </div> <!--container-->
+        <footer id="foot">
+            <ol>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Snapchat</li>
+                <li>instagram</li>
+                <li>LinkedIn</li>
+            </ol>
+        </footer>
+
+</body>
+</html>

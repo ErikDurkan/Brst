@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tightie Whities</title>>    
+    <style>
+        .container
+        {
+            background-color:darkgray;
+            width:100%;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            background-color:darkgrey;
+            font-family: Arial;
+            font-size: 1.1em; 
+                                
+        }
+        #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16
+        {
+            width: fit-content;
+            height: 160px;
+            float:inline-start;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-spacing: 10px;                
+            display: flex;       
+            justify-content: center;
+            align-items: center;
+        }
+        header
+        {
+           background-color: black;
+           color: white;
+           text-align: center;
+           width: 100%;  
+           height: 50px;
+        }
+        footer
+        {
+            font-size: .5em;
+            text-align: center;
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            margin-top: 30px;
+            
+        }    
+        body
+        {
+            background-color: black;    
+        }    
+        
+        table, th, td
+        {
+            border: 1px solid black;
+            table-layout: fixed; width: 50%;
+            text-align: center;
+        }
+        th
+        {
+            color:darkred;
+        }
+        button
+        {
+        background-color: orangered;
+        color: white;   
+        font-size: large; 
+        font-weight: bold;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+            #div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, .responsive
+            {
+                float: none;
+                width: 100%;
+                height: auto;
+                overflow: auto;
+                display:table-row;
+                font-size: 0.4em;
+                justify-items: center;
+                display: flex;
+                text-align: center;
+            }
+            th 
+            {
+                font-size: 1.1em;
+            }
+        }  
+        h1
+        {
+            margin-top: 5px;
+        }       
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tighty Whities</h1>
+    </header><br>
+    <div class="container">
+
+    <div id="div1">
+        <table>
+            <tr>
+                <th>Style:</th>
+                <th>Price:</th>
+                <th>Description:</th>
+            </tr>
+            <tr>
+                <td><img src="Tshirts/tshirt_1.jpg" alt="Tshirt 1" class="responsive" height="100px" width="100px"></td>
+                <td>420.69<br>USD</td>
+                <td>International Typographic black and white thsirt</td>
+            </tr>
+        </table>
+        <button type="button">Buy Now!</button>
+    </div>
+    
+    <div id="div2">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td> <img src="Tshirts/tshirt_2.jpg" alt="Tshirt 2" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>King Gizzard & the Lizard Wizard design black Tshirt</td>
+        </tr>  
+        </table>    
+        <button type="button">Buy Now!</button>  
+    </div>
+    <div id="div3">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_3.jpg" alt="Tshirt 3" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Urban attack event crew print orange Tshirt</td>
+        </tr>
+    </table>      
+    <button type="button">Buy Now!</button>  
+    </div>
+    <div id="div4">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_4.jpg" alt="Tshirt 4" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Born to fly drones white print gray Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div5">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_5.jpg" alt="Tshirt 5" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Support local business print black Tshir</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div6">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_6.jpg" alt="Tshirt 6" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Skeleton king print black Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div7">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_7.jpg" alt="Tshirt 7" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Don't text and drive print orange Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div8">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_8.png" alt="Tshirt 8" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Run for Boston 5k print lightgrey Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div9">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_9.png" alt="Tshirt 9" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>"I'm not retired, I'm a professional grandma" print black Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div10">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_10.jpg" alt="Tshirt 10" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>LFO print black Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div11">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_11.jpg" alt="Tshirt 11" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Little Mix 5 album print black Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div12">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_12.jpg" alt="Tshirt 12" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Black with red New York detail Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div13">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_13.jpg" alt="Tshirt 13" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Black whith green detail Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div14">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_14.png" alt="Tshirt 14" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>International Typographic black and white Tshirt</td>
+        </tr> 
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div15">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_15.jpg" alt="Tshirt 15" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Bunkered design teal Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+    <div id="div16">
+        <table>
+        <tr>
+            <th>Style:</th>
+            <th>Price:</th>
+            <th>Description:</th>
+        </tr>
+        <tr>
+            <td><img src="Tshirts/tshirt_16.jpg" alt="Tshirt 16" class="responsive" height="100px" width="100px"></td>
+            <td>420.69<br>USD</td>
+            <td>Plane orange Tshirt</td>
+        </tr>
+    </table>
+    <button type="button">Buy Now!</button>
+    </div>
+</div>
+
+<footer>
+       <h4>Store Physical Address: 123 Main Streetk, Westport, CT 06880 </h4>
+        <h4>Customer Service Number: (800) 555-1212</h4>
+        <h4>Statement: Copyright © 2019 | Tighty Whities, LLC | All Rights Reserved</h4>
+    </footer>
+</body>
+</div>
+
+</html>

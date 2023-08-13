@@ -1,0 +1,17 @@
+h1
+{
+    font-family: Arial;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-decoration:none;
+    color: darkblue;
+    font-size: 25pt;
+}
+
+p
+{
+    font-family: Verdana;
+    font-size:11pt;
+    font-weight: 400;
+    text-align: left;
+}

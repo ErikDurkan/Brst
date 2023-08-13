@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        #sky
+        {
+            background-color: blue;
+            width: 1600px;
+            height: 757px;
+            position: relative;
+        }
+        #sun
+        {
+            position: absolute;
+			width: 500px;
+			height: 500px;
+			margin: 200px auto;
+			transform: rotate(-45deg);
+			animation: sunrise infinite var(--animation-speed);
+        }
+        .orbit {
+			position: relative;
+			width: 500px;
+			height: 500px;
+			margin: 200px auto;
+			transform: rotate(-45deg);
+			animation: linear sunrise infinite var(--animation-speed);
+            transition-duration: 10s;
+		}
+        
+        @keyframes sunrise {
+			from {
+				transform: rotate(-45deg);
+			}
+
+			to {
+				transform: rotate(315deg);
+			}
+		}
+    </style>
+</head>
+<body>
+    <div id="sky">
+        <div class="orbit">
+        <div id="sun"></div>
+        </div>
+        <div id="ground"></div>
+    </div>    
+</body>
+</html>

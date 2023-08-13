@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sun</title>
+	<style>
+		body {
+			--animation-speed: 15s;
+			background-color: #2F4B21;
+		}
+		.sky {
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			max-height: 600px;
+			overflow: hidden;
+			background-color: #3BB9FF;
+		}
+		
+		.sun {
+			position: absolute;
+			top: -40px;
+			left: -40px;
+			width: 80px;
+			height: 80px;
+			background-color: yellow;
+			border-radius: 50%;
+		}
+
+		.orbit {
+			position: relative;
+			width: 700px;
+			height: 1200px;
+			margin: 200px auto;
+			transform: rotate(-45deg);
+			animation: linear sunrise infinite var(--animation-speed);
+		}
+		@keyframes sunrise {
+			from {
+				transform: rotate(-45deg);
+			}
+
+			to {
+				transform: rotate(315deg);
+			}
+		}
+		@keyfr
+		
+		
+		</style>
+</head>
+
+<body>
+	<div class="sky">
+		<div class="orbit">
+			<div class="sun"></div>
+		</div>
+	</div>		
+</body>
+
+</html>

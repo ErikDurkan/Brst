@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Training</title>
+    <style>
+        body
+        {
+            text-align: center;
+            background-color: cyan;
+            width: 100%;
+        }
+        input
+        {
+            background-color: #66CDAA;
+        }
+        @media only screen and (max-width: 600px) 
+        {
+                body
+                {
+                width: 100%;
+                height: auto;
+                overflow: auto;
+                display: flex;
+                justify-items: center;
+                text-align: center;
+                }
+        }
+    </style>
+</head>
+<body>
+    <h1>Puppy sign-up</h1>
+          
+              <form action="#" method="post">
+                    <input type="text" name="Owners Name" placeholder="Owners name" required /><br>                
+                  <input type="text" name="Phone Number" placeholder="Phone Number" required /><br>                
+                  <input type="email" name="Email Adress" placeholder="Email" required /><br>
+                      <input type="text" name="Puppy's name" placeholder="Puppy's name" required/><br>                  
+                      <input type="text" name="Birthdate" placeholder="Birthdate" required /><br>  
+                      <input type="text" name="Breed" placeholder="Breed" required /><br> 
+
+                    <h3>Puppy's gender</h3>            
+                    <input type="radio" name="radiogroup1" id="rd1">
+                    <label for="rd1">Male</label>
+                    <input type="radio" name="radiogroup1" id="rd2">
+                    <label for="rd2">Female</label><br>
+                    <br> 
+
+                    <h3>How did you hear about this?</h3>
+                    <select>
+                        <option>Radio</option>
+                        <option>Driving by</option>
+                        <option>Friends/Neighbours</option>
+                      </select><br>
+                      <br>
+
+                      <h3>Vaccinations:</h3>
+                    <input type="checkbox" id="cb1">
+                      <label for="cb1">Parvo</label><br>
+                    <input type="checkbox" id="cb2">
+                      <label for="cb2">Distemper</label><br>
+                    <input type="checkbox" id="cb3">
+                        <label for="cb3">Rabies</label><br>
+                      <br>
+
+                  <input class="button" type="submit" value="Register your puppy" /><br>
+              </form>
+</body>
+</html>
