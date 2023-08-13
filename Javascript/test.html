@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="out"></div>
+    <main>
+        <section class="main-wrapper">
+            <div class="key-map-wrapper">
+                <h2>Key Mapping</h2>
+                <ul class="key-map-list">
+                    <li>
+                        <kbd class="key-code">E</kbd>
+                        <span class="key-sound">Crash</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">R</kbd>
+                        <span class="key-sound">Ride</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">F</kbd>
+                        <span class="key-sound">Floor tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">G</kbd>
+                        <span class="key-sound">Mid tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">H</kbd>
+                        <span class="key-sound">High tom</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">V</kbd>
+                        <kbd class="key-code">B</kbd>
+                        <span class="key-sound">Kick</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">J</kbd>
+                        <span class="key-sound">Snare</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">I</kbd>
+                        <span class="key-sound">Hi-Hat Open</span>
+                    </li>
+                    <li>
+                        <kbd class="key-code">K</kbd>
+                        <span class="key-sound">Hi-Hat Closed</span>
+                    </li>
+                </ul>
+            </div>
+            <h1 class="main-title">JavaScript Drum Kit</h1>
+            <div class="drum-kit-wrapper">                
+                <div data-key="74" class="key snare">
+                    <kbd>J</kbd>
+                </div>
+                <div data-key="66" class="key kick">
+                    <kbd>B</kbd>
+                </div>
+                <div data-key="86" class="key kick2">
+                    <kbd>V</kbd>
+                </div>
+                <div data-key="72" class="key tom-high">
+                    <kbd>H</kbd>
+                </div>
+                <div data-key="71" class="key tom-mid">
+                    <kbd>G</kbd>
+                </div>
+                <div data-key="70" class="key tom-low">
+                    <kbd>F</kbd>
+                </div>
+                <div data-key="69" class="key crash">
+                    <kbd>E</kbd>
+                </div>
+                <div data-key="82" class="key ride">
+                    <kbd>R</kbd>
+                </div>
+                <div data-key="73" class="key hihat-open">
+                    <kbd>I</kbd>
+                </div>
+                <div data-key="75" class="key hihat-close">
+                    <kbd>K</kbd>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        /*
+        var GPA = [];
+        var theName = "";
+        var length = GPA.length;
+        var total = 0;
+        while (theName != "xxx") {
+            theName = prompt("Enter GPA or xxx to stop");
+            if (theName != "xxx") {
+                GPA.push(theName);
+            }
+        }
+
+        GPA.sort(function (a, b) {
+            if (a > b) return 1;
+            if (a < b) return -1;
+            return 0;
+        });
+        document.write(GPA);
+
+        for (var x = 0; x < GPA.length; x++) {
+            out += GPA[x];
+            out += "<br />";
+        }
+        doucment.write(out);
+        /*
+        for (var x = 0, x <length, x++) {
+            var theName = GPA[x];
+            theName += "<br/>";
+            total += GPA[1];
+        }
+        var average = (total / length);
+        out += "Class Average GPA: " + average;
+        document.write(total);
+        */
+
+        /* for (var number of GPA) {
+             sum += number;
+         }
+         average = sum / GPA.length;
+         document.write(average);
+         */
+
+        //const age = "50 is the age";
+        //console.log(parseInt(age));
+
+    </script>
+</body>
+
+</html>

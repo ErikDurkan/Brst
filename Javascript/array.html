@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA</title>
+</head>
+
+<body>
+    <script>
+        var gpas = [];
+        var Numstd = 0
+        Numstd = prompt("Enter number of students");
+
+        for (var a = 0; a < Numstd; a++) {
+            gpas[a] = prompt("Enter GPA " + (a + 1));
+        }
+
+        var sum = 0;
+        for (var i = 0; i < gpas.length; i++) {
+            sum += parseInt(gpas[i], 10);
+        }
+
+        var avg = sum / gpas.length;
+        document.write("Average GPA: " + avg);
+
+        gpas.sort(function (a, b) {
+            if (a > b) return 1;
+            if (a < b) return -1;
+            return 0;
+        });
+        document.write("<br/>Ascending GPA order: " + gpas);
+
+        document.write("<br/> Highest score: " + Math.max(...gpas));
+
+        document.write("<br/> Lowest score: " + Math.min(...gpas));
+
+        gpas.filter(check);
+        function check(scr) {
+            if (scr >= 3.4) {
+                document.write("<br/>Outstanding GPAs(over 3.4): " + scr)
+            }
+        }        
+    </script>
+</body>
+
+</html>

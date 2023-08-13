@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        var number = prompt("Tell me a number");
+        var output = "";
+
+        output += "Your number: " + number;
+        var number10 = (+number + 10);
+        output += "<br/> plus ten: " + number10;
+        var number20 = (+number10 + 20);
+        output += "<br/> plus twenty more: " + number20;
+        var number50 = (+number20 + 50);
+        output += "<br/> plus fifty more: " + number50; 
+        var number1k = (+number50 + 1568);
+        output += "<br/> plus 1568 more: " + number1k;
+
+
+        document.getElementById("out").innerHTML = output;
+    </script>
+</body>
+</html>

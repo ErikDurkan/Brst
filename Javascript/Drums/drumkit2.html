@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: white;
+            margin-top: 200px;
+        }
+
+        .animation {
+            box-shadow: 0 3px 4px 0 #DBEDF3;
+            opacity: 0.5;
+        }
+
+        .button {
+            padding: 8px;
+            border: 5px solid gray;
+            font-size: 25px;
+            font-family: 'Arvo', cursive;
+            font-weight: bold;
+            color: black;
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Drum Kit</h1><br>
+
+    <div class="all">
+        <button class="a button">A</button>
+        <button class="s button">S</button>
+        <button class="d button">D</button>
+        <button class="f button">F</button>
+        <button class="g button">G</button>
+        <button class="h button">H</button>
+        <button class="j button">J</button>
+
+        <!--JAVASCRIPT!-->
+        <script>
+            var numberOfButtons = document.querySelectorAll(".button").length
+            for (var j = 0; j < numberOfButtons; j++) {
+                document.querySelectorAll(".button")[j].addEventListener("click", function () {
+                    var buttonStyle = this.innerHTML;
+                    sound(buttonStyle);
+                    animation(buttonStyle);
+                });
+            }
+
+            document.addEventListener("keypress", function (event) {
+                sound(event.key);
+                animation(event.key);
+            });
+
+            function sound(key) {
+                switch (key) {
+                    case "a":
+                        var sound1 = new Audio("kickbass.mp3");
+                        sound1.play();
+                        break;
+
+                    case "s":
+                        var sound2 = new Audio("snare.mp3");
+                        sound2.play();
+                        break;
+
+                    case "d":
+                        var sound3 = new Audio("crash.mp3");
+                        sound3.play();
+                        break;
+
+                    case "f":
+                        var sound4 = new Audio("tom1.mp3");
+                        sound4.play();
+                        break;
+
+                    case "g":
+                        var sound5 = new Audio("tom2.mp3");
+                        sound5.play();
+                        break;
+
+                    case "h":
+                        var sound6 = new Audio("tom3.mp3");
+                        sound6.play();
+                        break;
+
+                    case "j":
+                        var sound7 = new Audio("tom4.mp3");
+                        sound7.play();
+                        break;
+
+                }
+            }
+            function animation(currentKey) {
+                var activeButton = document.querySelector("." + currentKey);
+                activeButton.classList.add("animation");
+                setTimeout(function () {
+                    activeButton.classList.remove("animation");
+                }, 100);
+            }
+        </script>
+</body>
+
+</html>

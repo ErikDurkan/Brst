@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        var operand1 = prompt("Type a number");
+        var operand2 = prompt("Type a second number");
+        var output = "";
+        output+=("The sum of those numbers: "+ (+operand1 + +operand2));
+        output+=("<br/>Second number subtracted from first is: "+ (operand2 - operand1));
+        output+=("<br/>Those numbers multiplied: "+ (operand1 * operand2));
+        output+=("<br/>First number is eaqual to the second. "+ (operand1 == operand2));
+        output+=("<br/>First number is smaller tan the second. "+ (operand1 > operand2));
+        output+=("<br/>You can divide second number evenly into first. "+ (operand2 % operand1 === 0));
+
+        document.getElementById("out").innerHTML = output;
+    </script>
+</body>
+</html>
